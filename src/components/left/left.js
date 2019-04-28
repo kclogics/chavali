@@ -5,8 +5,12 @@ import "../../App.css";
 function Left() {
   return (
     <div className="left">
-      <div>hello</div>
-      <div className="LeftElement"> hello</div>
+      {/* <div className="LeftElementTags"> Tags</div> */}
+      <div className="LeftElementHeader"> Header</div>
+      <div className="LeftElementBody">
+        <div className="LeftElementTags">Tags</div>
+      </div>
+      <div className="LeftElementFooter"> footer</div>
     </div>
   );
 }

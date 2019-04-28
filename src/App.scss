@@ -2,6 +2,9 @@ $primary-color: green;
 $left: yellow;
 $right: #800000;
 
+$outline: pink;
+$body: lightblue;
+
 .left,
 .right {
   width: 50%;
@@ -31,11 +34,27 @@ $right: #800000;
   }
 }
 
-.LeftElement {
-  position: absolute;
-  bottom: 0;
+.LeftElementFooter,
+.LeftElementHeader,
+.LeftElementBody {
+  position: relative;
   width: 100%;
-  background-color: pink;
-  height: 40%;
+  background-color: $outline;
+  height: 20%;
   z-index: 10001;
+  display: block;
+}
+
+.LeftElementHeader {
+}
+.LeftElementBody {
+  height: 60%;
+  background-color: $body;
+  .LeftElementTags {
+    width: 100px;
+    height: 100%;
+    background-color: grey;
+  }
+}
+.LeftElementFooter {
 }

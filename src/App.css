@@ -29,13 +29,25 @@
     bottom: 0;
   }
 }
-.LeftElement {
-  position: absolute;
-  bottom: 0;
+.LeftElementFooter,
+.LeftElementHeader,
+.LeftElementBody {
+  position: relative;
   width: 100%;
   background-color: pink;
-  height: 40%;
+  height: 20%;
   z-index: 10001;
+  display: block;
+}
+
+.LeftElementBody {
+  height: 60%;
+  background-color: lightblue;
+}
+.LeftElementBody .LeftElementTags {
+  width: 100px;
+  height: 100%;
+  background-color: grey;
 }
 
 /*# sourceMappingURL=App.css.map */
