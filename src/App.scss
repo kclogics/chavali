@@ -1,9 +1,9 @@
 $primary-color: green;
-$left: yellow;
-$right: #800000;
+$left: white;
+$right: white;
 
-$outline: pink;
-$body: lightblue;
+$outline: rgb(65, 135, 163);
+$body: green;
 
 .left,
 .right {
@@ -11,15 +11,17 @@ $body: lightblue;
   height: 100%;
   display: block;
   position: absolute;
-  overflow: auto;
+  color: white;
 }
 .left {
   left: 0;
   background-color: $left;
+  overflow: hidden;
 }
 .right {
   right: 0;
   background-color: $right;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -35,26 +37,56 @@ $body: lightblue;
 }
 
 .LeftElementFooter,
+.RightElementFooter,
 .LeftElementHeader,
-.LeftElementBody {
+.RightElementHeader,
+.LeftElementBody,
+.RightElementBody {
   position: relative;
   width: 100%;
   background-color: $outline;
   height: 20%;
   z-index: 10001;
   display: block;
+  border: 2px solid black;
 }
 
-.LeftElementHeader {
-}
-.LeftElementBody {
+.LeftElementBody,
+.RightElementBody {
+  overflow: auto;
   height: 60%;
-  background-color: $body;
-  .LeftElementTags {
-    width: 100px;
+  // background-color: $body;
+  overflow: hidden;
+  .LeftElementContent,
+  .RightElementContent {
+    overflow: auto;
+    position: absolute;
+    width: 88%;
     height: 100%;
-    background-color: grey;
+    // background-color: rgb(46, 95, 114);
+    border: 2px solid black;
+    display: block;
+    z-index: 10003;
+  }
+
+  .RightElementTags,
+  .LeftElementTags {
+    border: 2px solid black;
+    position: absolute;
+    width: 12%;
+    height: 100%;
   }
 }
-.LeftElementFooter {
+
+.LeftElementBody {
+  background-color: rgb(65, 63, 63);
+}
+.RightElementBody {
+  background-color: rgb(65, 63, 63);
+}
+.RightElementTags {
+  right: 0;
+}
+.LeftElementContent {
+  right: 0;
 }

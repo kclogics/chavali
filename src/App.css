@@ -4,17 +4,19 @@
   height: 100%;
   display: block;
   position: absolute;
-  overflow: auto;
+  color: white;
 }
 
 .left {
   left: 0;
-  background-color: yellow;
+  background-color: white;
+  overflow: hidden;
 }
 
 .right {
   right: 0;
-  background-color: #800000;
+  background-color: white;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -30,24 +32,62 @@
   }
 }
 .LeftElementFooter,
+.RightElementFooter,
 .LeftElementHeader,
-.LeftElementBody {
+.RightElementHeader,
+.LeftElementBody,
+.RightElementBody {
   position: relative;
   width: 100%;
-  background-color: pink;
+  background-color: #4187a3;
   height: 20%;
   z-index: 10001;
   display: block;
+  border: 2px solid black;
+}
+
+.LeftElementBody,
+.RightElementBody {
+  overflow: auto;
+  height: 60%;
+  overflow: hidden;
+}
+.LeftElementBody .LeftElementContent,
+.LeftElementBody .RightElementContent,
+.RightElementBody .LeftElementContent,
+.RightElementBody .RightElementContent {
+  overflow: auto;
+  position: absolute;
+  width: 88%;
+  height: 100%;
+  border: 2px solid black;
+  display: block;
+  z-index: 10003;
+}
+.LeftElementBody .RightElementTags,
+.LeftElementBody .LeftElementTags,
+.RightElementBody .RightElementTags,
+.RightElementBody .LeftElementTags {
+  border: 2px solid black;
+  position: absolute;
+  width: 12%;
+  height: 100%;
 }
 
 .LeftElementBody {
-  height: 60%;
-  background-color: lightblue;
+  background-color: #413f3f;
 }
-.LeftElementBody .LeftElementTags {
-  width: 100px;
-  height: 100%;
-  background-color: grey;
+
+.RightElementBody {
+  background-color: #413f3f;
+}
+
+.RightElementTags {
+  right: 0;
+}
+
+.LeftElementContent {
+  right: 0;
 }
 
 /*# sourceMappingURL=App.css.map */
