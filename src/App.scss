@@ -1,4 +1,4 @@
-$primary-color: black;
+$primary-color: green;
 $left: white;
 $right: #800000;
 
@@ -10,9 +10,10 @@ $right: #800000;
 }
 .left,
 .right {
+  margin: 0;
   width: 50%;
   height: 100%;
-  display: block;
+  display: inline-block;
 }
 .left {
   left: 0;
@@ -28,13 +29,6 @@ $right: #800000;
   .right {
     width: 100%;
     height: 50%;
-  }
-  .left {
-    left: 0;
-    background-color: $left;
-  }
-  .right {
-    right: 0;
-    background-color: $right;
+    display: block;
   }
 }
