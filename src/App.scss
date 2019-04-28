@@ -1,6 +1,6 @@
 $primary-color: black;
 $left: white;
-$right: red;
+$right: #800000;
 
 .App-header {
   width: 100%;
@@ -12,7 +12,7 @@ $right: red;
 .right {
   width: 50%;
   height: 100%;
-  position: absolute;
+  display: block;
 }
 .left {
   left: 0;
@@ -21,4 +21,20 @@ $right: red;
 .right {
   right: 0;
   background-color: $right;
+}
+
+@media only screen and (max-width: 1024px) {
+  .left,
+  .right {
+    width: 100%;
+    height: 50%;
+  }
+  .left {
+    left: 0;
+    background-color: $left;
+  }
+  .right {
+    right: 0;
+    background-color: $right;
+  }
 }
