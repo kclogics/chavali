@@ -1,1 +1,3 @@
-from local pc : shera
+git:
+
+1. style alignment : left and right
