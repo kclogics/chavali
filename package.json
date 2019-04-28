@@ -58,6 +58,7 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
+    "style": "sass  --watch src/App.scss src/App.css",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js"
   },
