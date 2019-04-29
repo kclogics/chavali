@@ -5,13 +5,16 @@ $right: white;
 $outline: rgb(65, 135, 163);
 $body: green;
 
+h1 {
+  font-size: 40px;
+}
 .left,
 .right {
   width: 50%;
   height: 100%;
   display: block;
   position: absolute;
-  color: white;
+  color: red;
 }
 .left {
   left: 0;
