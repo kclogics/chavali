@@ -5,6 +5,7 @@ import HomePage from "../home/homePage";
 import AboutPage from "../about/aboutPage";
 import ToolsPage from "../tools/toolsPage";
 import Header from "../common/Header";
+import ToolsBody from "../common/ToolsBody";
 
 function Left() {
   return (
