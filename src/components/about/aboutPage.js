@@ -2,11 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const AboutPage = () => (
-  <div>
+  <>
     <h1>About</h1>
-    <Link to="home">home page</Link>
+    <Link to="/about/social">Social</Link>
     <span> | </span>
-    <Link to="tools">tool page</Link>
-  </div>
+    <Link to="/about/s2">About Me</Link>
+  </>
 );
+
 export default AboutPage;
