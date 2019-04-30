@@ -8,3 +8,4 @@ git:
 6. Played with toolsPage.js (Left: captions, right : content)
 7. central routing
 8. central routing content updating
+9. wireframe stylistic prefrences

@@ -85,7 +85,7 @@ h1 {
   border: 2px outset black;
 
   overflow: auto;
-  height: 60%;
+  height: 70%;
   // background-color: $body;
   overflow: hidden;
   .LeftElementContent,
@@ -104,6 +104,7 @@ h1 {
   .LeftElementTags {
     // border-left: 2px solid black;
     // border-right: 2px solid black;
+    background-color: rgba(0, 0, 0, 0.644);
     position: absolute;
     width: 12%;
     height: 100%;

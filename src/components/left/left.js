@@ -29,7 +29,7 @@ function Left() {
             <Route path="/chavali" component={Chavali} />
           </Switch>
         </div>
-        <div className="LeftElementTags">Tags</div>
+        <div className="LeftElementTags" />
       </div>
       <div className="LeftElementFooter">Index*</div>
     </div>

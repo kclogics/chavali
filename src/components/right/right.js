@@ -82,7 +82,7 @@ function Right() {
             <Route exact path="/chavali/f4" component={F4} />
           </Switch>
         </div>
-        <div className="RightElementTags">Tags</div>
+        <div className="RightElementTags" />
       </div>
       <div className="RightElementFooter">Content*</div>
     </div>
