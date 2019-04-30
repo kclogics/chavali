@@ -29,13 +29,13 @@ const Chavali = () => (
     <Link to="/chavali/s2">About Me</Link>
     <h1>HECA</h1>
     <nav>
-      <Link to="/chavali/developer">Hire me</Link>
+      <Link to="/chavali/hire">Hire me</Link>
       <span> | </span>
-      <Link to="/chavali/designer">Earn</Link>
+      <Link to="/chavali/earn">Earn</Link>
       <span> | </span>
-      <Link to="/chavali/brand">Collabrate</Link>
+      <Link to="/chavali/collabrate">Collabrate</Link>
       <span> | </span>
-      <Link to="/chavali/happiness">Affliate</Link>
+      <Link to="/chavali/affiliate">Affliate</Link>
     </nav>
     <h1>FACE</h1>
     <nav>

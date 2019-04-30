@@ -7,3 +7,4 @@ git:
 5. low fidelity titles
 6. Played with toolsPage.js (Left: captions, right : content)
 7. central routing
+8. central routing content updating

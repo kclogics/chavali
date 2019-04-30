@@ -15,6 +15,11 @@ import H4 from "../home/H4";
 import Social from "../about/social";
 import S2 from "../about/s2";
 
+import Heca1 from "../heca/heca1";
+import Heca2 from "../heca/heca2";
+import Heca3 from "../heca/heca3";
+import Heca4 from "../heca/heca4";
+
 import F1 from "../face/F1";
 import F2 from "../face/F2";
 import F3 from "../face/F3";
@@ -44,6 +49,12 @@ function Right() {
             <Route exact path="/tools/t4" component={T4} />
             <Route exact path="/about/social" component={Social} />
             <Route exact path="/about/s2" component={S2} />
+
+            <Route exact path="/heca/hire" component={Heca1} />
+            <Route exact path="/heca/earn" component={Heca2} />
+            <Route exact path="/heca/collabrate" component={Heca3} />
+            <Route exact path="/heca/affiliate" component={Heca4} />
+
             <Route exact path="/face/f1" component={F1} />
             <Route exact path="/face/f2" component={F2} />
             <Route exact path="/face/f3" component={F3} />
@@ -60,6 +71,11 @@ function Right() {
             <Route exact path="/chavali/t4" component={T4} />
             <Route exact path="/chavali/social" component={Social} />
             <Route exact path="/chavali/s2" component={S2} />
+
+            <Route exact path="/chavali/hire" component={Heca1} />
+            <Route exact path="/chavali/earn" component={Heca2} />
+            <Route exact path="/chavali/collabrate" component={Heca3} />
+            <Route exact path="/chavali/affiliate" component={Heca4} />
             <Route exact path="/chavali/f1" component={F1} />
             <Route exact path="/chavali/f2" component={F2} />
             <Route exact path="/chavali/f3" component={F3} />
