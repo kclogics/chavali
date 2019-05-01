@@ -38,49 +38,51 @@ function Right() {
       </div>
       <div className="RightElementBody">
         <div className="RightElementContent">
-          <Switch>
-            <Route exact path="/home/developer" component={H1} />
-            <Route exact path="/home/designer" component={H2} />
-            <Route exact path="/home/brand" component={H3} />
-            <Route exact path="/home/happiness" component={H4} />
-            <Route exact path="/tools/t1" component={T1} />
-            <Route exact path="/tools/t2" component={T2} />
-            <Route exact path="/tools/t3" component={T3} />
-            <Route exact path="/tools/t4" component={T4} />
-            <Route exact path="/about/social" component={Social} />
-            <Route exact path="/about/s2" component={S2} />
+          <div className="RightElementContentStyle">
+            <Switch>
+              <Route exact path="/home/developer" component={H1} />
+              <Route exact path="/home/designer" component={H2} />
+              <Route exact path="/home/brand" component={H3} />
+              <Route exact path="/home/happiness" component={H4} />
+              <Route exact path="/tools/t1" component={T1} />
+              <Route exact path="/tools/t2" component={T2} />
+              <Route exact path="/tools/t3" component={T3} />
+              <Route exact path="/tools/t4" component={T4} />
+              <Route exact path="/about/social" component={Social} />
+              <Route exact path="/about/s2" component={S2} />
 
-            <Route exact path="/heca/hire" component={Heca1} />
-            <Route exact path="/heca/earn" component={Heca2} />
-            <Route exact path="/heca/collabrate" component={Heca3} />
-            <Route exact path="/heca/affiliate" component={Heca4} />
+              <Route exact path="/heca/hire" component={Heca1} />
+              <Route exact path="/heca/earn" component={Heca2} />
+              <Route exact path="/heca/collabrate" component={Heca3} />
+              <Route exact path="/heca/affiliate" component={Heca4} />
 
-            <Route exact path="/face/f1" component={F1} />
-            <Route exact path="/face/f2" component={F2} />
-            <Route exact path="/face/f3" component={F3} />
-            <Route exact path="/face/f4" component={F4} />
-          </Switch>
-          <Switch>
-            <Route exact path="/chavali/developer" component={H1} />
-            <Route exact path="/chavali/designer" component={H2} />
-            <Route exact path="/chavali/brand" component={H3} />
-            <Route exact path="/chavali/happiness" component={H4} />
-            <Route exact path="/chavali/t1" component={T1} />
-            <Route exact path="/chavali/t2" component={T2} />
-            <Route exact path="/chavali/t3" component={T3} />
-            <Route exact path="/chavali/t4" component={T4} />
-            <Route exact path="/chavali/social" component={Social} />
-            <Route exact path="/chavali/s2" component={S2} />
+              <Route exact path="/face/f1" component={F1} />
+              <Route exact path="/face/f2" component={F2} />
+              <Route exact path="/face/f3" component={F3} />
+              <Route exact path="/face/f4" component={F4} />
+            </Switch>
+            <Switch>
+              <Route exact path="/chavali/developer" component={H1} />
+              <Route exact path="/chavali/designer" component={H2} />
+              <Route exact path="/chavali/brand" component={H3} />
+              <Route exact path="/chavali/happiness" component={H4} />
+              <Route exact path="/chavali/t1" component={T1} />
+              <Route exact path="/chavali/t2" component={T2} />
+              <Route exact path="/chavali/t3" component={T3} />
+              <Route exact path="/chavali/t4" component={T4} />
+              <Route exact path="/chavali/social" component={Social} />
+              <Route exact path="/chavali/s2" component={S2} />
 
-            <Route exact path="/chavali/hire" component={Heca1} />
-            <Route exact path="/chavali/earn" component={Heca2} />
-            <Route exact path="/chavali/collabrate" component={Heca3} />
-            <Route exact path="/chavali/affiliate" component={Heca4} />
-            <Route exact path="/chavali/f1" component={F1} />
-            <Route exact path="/chavali/f2" component={F2} />
-            <Route exact path="/chavali/f3" component={F3} />
-            <Route exact path="/chavali/f4" component={F4} />
-          </Switch>
+              <Route exact path="/chavali/hire" component={Heca1} />
+              <Route exact path="/chavali/earn" component={Heca2} />
+              <Route exact path="/chavali/collabrate" component={Heca3} />
+              <Route exact path="/chavali/affiliate" component={Heca4} />
+              <Route exact path="/chavali/f1" component={F1} />
+              <Route exact path="/chavali/f2" component={F2} />
+              <Route exact path="/chavali/f3" component={F3} />
+              <Route exact path="/chavali/f4" component={F4} />
+            </Switch>
+          </div>
         </div>
         <div className="RightElementTags" />
       </div>

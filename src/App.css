@@ -89,7 +89,6 @@ h1 {
 .LeftElementBody .LeftElementTags,
 .RightElementBody .RightElementTags,
 .RightElementBody .LeftElementTags {
-  background-color: rgba(0, 0, 0, 0.644);
   position: absolute;
   width: 12%;
   height: 100%;
@@ -109,6 +108,10 @@ h1 {
 
 .LeftElementContent {
   right: 0;
+}
+
+.RightElementContentStyle {
+  margin: 10px;
 }
 
 /*# sourceMappingURL=App.css.map */
