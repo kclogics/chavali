@@ -86,7 +86,7 @@ function Right() {
         </div>
         <div className="RightElementTags" />
       </div>
-      <div className="RightElementFooter">Content*</div>
+      <div className="RightElementFooter" />
     </div>
   );
 }

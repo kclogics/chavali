@@ -31,7 +31,7 @@ function Left() {
         </div>
         <div className="LeftElementTags" />
       </div>
-      <div className="LeftElementFooter">Index*</div>
+      <div className="LeftElementFooter" />
     </div>
   );
 }

@@ -89,6 +89,7 @@ h1 {
 .LeftElementBody .LeftElementTags,
 .RightElementBody .RightElementTags,
 .RightElementBody .LeftElementTags {
+  background-color: rgba(44, 182, 216, 0.644);
   position: absolute;
   width: 12%;
   height: 100%;
