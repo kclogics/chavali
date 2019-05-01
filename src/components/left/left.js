@@ -18,16 +18,18 @@ function Left() {
       </div>
       <div className="LeftElementBody">
         <div className="LeftElementContent">
-          <Switch>
-            {/* <Route exact path="/" component={HomePage} /> */}
-            <Route exact path="/home" component={HomePage} />
-            <Route exact path="/home/*" component={HomePage} />
-            <Route path="/about" component={AboutPage} />
-            <Route path="/tools" component={ToolsPage} />
-            <Route path="/heca" component={Heca} />
-            <Route path="/face" component={Face} />
-            <Route path="/chavali" component={Chavali} />
-          </Switch>
+          <div className="RightElementContentStyle">
+            <Switch>
+              {/* <Route exact path="/" component={HomePage} /> */}
+              <Route exact path="/home" component={HomePage} />
+              <Route exact path="/home/*" component={HomePage} />
+              <Route path="/about" component={AboutPage} />
+              <Route path="/tools" component={ToolsPage} />
+              <Route path="/heca" component={Heca} />
+              <Route path="/face" component={Face} />
+              <Route path="/chavali" component={Chavali} />
+            </Switch>
+          </div>
         </div>
         <div className="LeftElementTags" />
       </div>
