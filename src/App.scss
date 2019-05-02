@@ -1,13 +1,19 @@
 .App {
-  background-color: darkseagreen;
+  color: #116ebf;
 }
+
+$brg-red: #bf0413;
+$brg-maroon: #73020c;
+$brg-blue: #054ba6;
+$brg-skyblue: #116ebf;
+$brg-grey: #b0b8bf;
 
 $primary-color: #a63740;
 $left: white;
 $right: white;
 
 $outline: white;
-$body: #d9aca3;
+$body: #6b7080;
 
 $element: white;
 
@@ -21,7 +27,7 @@ h1 {
   height: 100%;
   display: block;
   position: absolute;
-  color: grey;
+  color: $brg-red;
 }
 .left {
   left: 0;
@@ -36,13 +42,14 @@ h1 {
 
 @media only screen and (max-width: 1024px) {
   h1 {
-    font-size: 10px;
+    font-size: 14px;
   }
   p {
-    font-size: 10px;
+    font-size: 12px;
   }
+
   a {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .left,
@@ -83,11 +90,11 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: antiquewhite;
+  // background-color: #d6dfff;
 }
 .LeftElementBody,
 .RightElementBody {
-  border: 2px outset black;
+  border: 2px solid $brg-grey;
 
   overflow: auto;
   height: 70%;
@@ -109,7 +116,7 @@ h1 {
   .LeftElementTags {
     // border-left: 2px solid black;
     // border-right: 2px solid black;
-    background-color: rgba(44, 182, 216, 0.644);
+    background-color: #b0b8bf;
     position: absolute;
     width: 12%;
     height: 100%;

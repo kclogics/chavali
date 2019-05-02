@@ -13,3 +13,4 @@ git:
 11. wireframe logo and stylistic low fidelity
 12. server side rendering with express (beta)
 13. proxy express server : single pointer
+14. wireframe functional (prototype, routing) (beta)

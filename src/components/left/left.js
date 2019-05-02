@@ -8,6 +8,7 @@ import Heca from "../heca/Heca";
 import Face from "../face/Face";
 import Header from "../common/Header";
 import Chavali from "../chavali/chavali";
+import PageNotFound from "../PageNotFound.js";
 
 function Left() {
   return (
@@ -28,6 +29,7 @@ function Left() {
               <Route path="/heca" component={Heca} />
               <Route path="/face" component={Face} />
               <Route path="/chavali" component={Chavali} />
+              <Route component={PageNotFound} />
             </Switch>
           </div>
         </div>
