@@ -26,6 +26,7 @@ import F3 from "../face/F3";
 import F4 from "../face/F4";
 
 import Logo from "../chavali/logo";
+import Logo1 from "../../logo.svg";
 
 class ServerApp extends React.Component {
   state = { users: [] };
@@ -33,6 +34,7 @@ class ServerApp extends React.Component {
   componentDidMount() {
     fetch("/users")
       .then(res => res.json())
+
       .then(users => this.setState({ users }));
   }
 
@@ -43,6 +45,10 @@ class ServerApp extends React.Component {
         {this.state.users.map(user => (
           <div key={user.id}>{user.username}</div>
         ))}
+        <img
+          width="200px"
+          src="//upload.wikimedia.org/wikipedia/commons/c/c4/Icon_Error.png"
+        />
       </div>
     );
   }

@@ -12,3 +12,4 @@ git:
 10. wireframe stylistic prefrences update
 11. wireframe logo and stylistic low fidelity
 12. server side rendering with express (beta)
+13. proxy express server : single pointer
