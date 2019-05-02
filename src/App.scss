@@ -1,3 +1,7 @@
+.App {
+  background-color: darkseagreen;
+}
+
 $primary-color: #a63740;
 $left: white;
 $right: white;
@@ -68,7 +72,7 @@ h1 {
   position: relative;
   background-color: $outline;
   height: 20%;
-  z-index: 10001;
+  z-index: 100001;
   display: block;
 
   // border: 2px solid black;
@@ -79,6 +83,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: antiquewhite;
 }
 .LeftElementBody,
 .RightElementBody {

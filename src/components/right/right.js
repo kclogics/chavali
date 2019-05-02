@@ -27,6 +27,27 @@ import F4 from "../face/F4";
 
 import Logo from "../chavali/logo";
 
+class ServerApp extends React.Component {
+  state = { users: [] };
+
+  componentDidMount() {
+    fetch("/users")
+      .then(res => res.json())
+      .then(users => this.setState({ users }));
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <h1>Users</h1>
+        {this.state.users.map(user => (
+          <div key={user.id}>{user.username}</div>
+        ))}
+      </div>
+    );
+  }
+}
+
 function Right() {
   return (
     <div className="right">
@@ -39,6 +60,7 @@ function Right() {
       <div className="RightElementBody">
         <div className="RightElementContent">
           <div className="RightElementContentStyle">
+            <ServerApp />
             <Switch>
               <Route exact path="/home/developer" component={H1} />
               <Route exact path="/home/designer" component={H2} />

@@ -24,6 +24,7 @@
     "eslint-plugin-jsx-a11y": "6.2.1",
     "eslint-plugin-react": "7.12.4",
     "eslint-plugin-react-hooks": "^1.5.0",
+    "express": "^4.16.4",
     "file-loader": "3.0.1",
     "fs-extra": "7.0.1",
     "html-webpack-plugin": "4.0.0-beta.5",
@@ -35,6 +36,7 @@
     "jest-watch-typeahead": "0.3.0",
     "mini-css-extract-plugin": "0.5.0",
     "optimize-css-assets-webpack-plugin": "5.0.1",
+    "path": "^0.12.7",
     "pnp-webpack-plugin": "1.2.1",
     "postcss-flexbugs-fixes": "4.1.0",
     "postcss-loader": "3.0.0",
@@ -59,10 +61,12 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
+    "server": " node scripts/server.js",
     "style": "sass  --watch src/App.scss src/App.css",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js"
   },
+  "proxy": "http://localhost:8080/",
   "eslintConfig": {
     "extends": "react-app"
   },
