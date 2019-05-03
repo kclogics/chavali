@@ -1,9 +1,14 @@
 import React from "react";
 
+import DeveloperImage from "../../images/1realimage.jpg";
+
 const H1 = () => (
-  <div>
-    <h1>Developer</h1>
-    <h1>Find what you love & let it kill you</h1>
-  </div>
+  <>
+    {/* <h1>Developer</h1>
+    <p>Find what you love & let it kill you</p> */}
+    <div className="ImageCover">
+      <img className="HomeImage" src={DeveloperImage} />
+    </div>
+  </>
 );
 export default H1;

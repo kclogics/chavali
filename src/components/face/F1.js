@@ -2,7 +2,8 @@ import React from "react";
 
 const F1 = () => (
   <div>
-    <h1>Fun Unlimited</h1>
+    <h1>Fun</h1>
+    <p>Fun Unlimited</p>
   </div>
 );
 export default F1;

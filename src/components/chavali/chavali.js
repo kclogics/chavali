@@ -3,11 +3,14 @@ import { Route, Switch } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
+import devLogo from "../../images/developer.svg";
+
 const Chavali = () => {
   const activeStyle = { color: "red" };
   return (
     <>
       <h1>krishnachavali.com </h1>
+
       <h1>Home</h1>
 
       <nav>
@@ -98,6 +101,113 @@ const Chavali = () => {
           Enlighten
         </NavLink>
       </nav>
+      <hr />
+
+      <h1>Tools</h1>
+
+      <nav>
+        <NavLink to="/chavali/t1" activeStyle={activeStyle} exact>
+          Javascript
+        </NavLink>{" "}
+        {"|"}{" "}
+        <NavLink to="/chavali/t2" activeStyle={activeStyle}>
+          React js
+        </NavLink>{" "}
+        {"|"}{" "}
+        <NavLink to="/chavali/t3" activeStyle={activeStyle}>
+          Adobe
+        </NavLink>{" "}
+        {"|"}{" "}
+        <NavLink to="/chavali/t4" activeStyle={activeStyle}>
+          AWS
+        </NavLink>
+      </nav>
+      <div class="flex-wrapper">
+        <div class="single-chart">
+          <svg viewBox="0 0 36 36" class="circular-chart orange">
+            <path
+              class="circle-bg"
+              d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <path
+              class="circle"
+              stroke-dasharray="40, 100"
+              d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <text x="18" y="20.35" class="percentage">
+              40%
+            </text>
+          </svg>
+        </div>
+        <div class="single-chart">
+          <svg viewBox="0 0 36 36" class="circular-chart green">
+            <path
+              class="circle-bg"
+              d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <path
+              class="circle"
+              stroke-dasharray="60, 100"
+              d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <text x="18" y="20.35" class="percentage">
+              60%
+            </text>
+          </svg>
+        </div>
+        <div class="single-chart">
+          <svg viewBox="0 0 36 36" class="circular-chart blue">
+            <path
+              class="circle-bg"
+              d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <path
+              class="circle"
+              stroke-dasharray="100, 100"
+              d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <text x="18" y="20.35" class="percentage">
+              100%
+            </text>
+          </svg>
+        </div>
+        <div class="single-chart">
+          <svg
+            viewBox="0 0 36 36"
+            class="circular-chart blue"
+            id="circular-chart blue"
+          >
+            <path
+              class="circle-bg"
+              d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <path
+              class="circle"
+              stroke-dasharray="10, 100"
+              d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <text x="18" y="20.35" class="percentage">
+              10%
+            </text>
+          </svg>
+        </div>
+      </div>
     </>
   );
 };

@@ -2,7 +2,8 @@ import React from "react";
 
 const F3 = () => (
   <div>
-    <h1>Accept the challenge, earn rewards and badges</h1>
+    <h1>Challenges </h1>
+    <p>Accept the challenge, earn rewards and badges</p>
   </div>
 );
 export default F3;

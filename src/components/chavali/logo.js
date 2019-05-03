@@ -2,7 +2,7 @@ import React from "react";
 
 import { NavLink } from "react-router-dom";
 
-import LogoChavali from "../../logo.svg";
+import LogoChavali from "../../images/logo.svg";
 
 const Logo = () => {
   const activeStyle = { color: "red" };

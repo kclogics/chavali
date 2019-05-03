@@ -2,7 +2,8 @@ import React from "react";
 
 const Heca1 = () => (
   <div>
-    <h1>Let's connect & make that awesome thing alive</h1>
+    <h1>Hire me</h1>
+    <p>Let's connect & make that awesome thing alive</p>
   </div>
 );
 export default Heca1;

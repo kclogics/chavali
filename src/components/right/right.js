@@ -25,8 +25,8 @@ import F2 from "../face/F2";
 import F3 from "../face/F3";
 import F4 from "../face/F4";
 
-import Logo from "../chavali/logo";
-import Logo1 from "../../logo.svg";
+import Logo from "../../components/chavali/logo";
+
 import PageNotFound from "../PageNotFound";
 class ServerApp extends React.Component {
   state = { users: [] };
@@ -41,7 +41,7 @@ class ServerApp extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>Users</h1>
+        <h2>Users</h2>
         {this.state.users.map(user => (
           <div key={user.id}>{user.username}</div>
         ))}
@@ -67,7 +67,6 @@ function Right() {
       <div className="RightElementBody">
         <div className="RightElementContent">
           <div className="RightElementContentStyle">
-            <ServerApp />
             <Switch>
               <Route exact path="/home/developer" component={H1} />
               <Route exact path="/home/designer" component={H2} />
