@@ -3,13 +3,14 @@ import { NavLink } from "react-router-dom";
 
 import { Link } from "react-router-dom";
 
+import devLogo from "../../images/developer.svg";
+
 const HomePage = () => {
   const activeStyle = { color: "red" };
 
   return (
     <>
-      <h1>Home</h1>
-
+      <h1>Home </h1>
       <nav>
         <NavLink to="/home/developer" activeStyle={activeStyle}>
           Developer

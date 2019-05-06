@@ -25,6 +25,8 @@ import F2 from "../face/F2";
 import F3 from "../face/F3";
 import F4 from "../face/F4";
 
+import chavaliTools from "../tools/chavaliTools.js";
+
 import Logo from "../../components/chavali/logo";
 
 import PageNotFound from "../PageNotFound";
@@ -72,10 +74,12 @@ function Right() {
               <Route exact path="/home/designer" component={H2} />
               <Route exact path="/home/brand" component={H3} />
               <Route exact path="/home/happiness" component={H4} />
+
               <Route exact path="/tools/t1" component={T1} />
               <Route exact path="/tools/t2" component={T2} />
               <Route exact path="/tools/t3" component={T3} />
               <Route exact path="/tools/t4" component={T4} />
+
               <Route exact path="/about/social" component={Social} />
               <Route exact path="/about/s2" component={S2} />
 
@@ -90,6 +94,8 @@ function Right() {
               <Route exact path="/face/f4" component={F4} />
             </Switch>
             <Switch>
+              <Route exact path="/chavali/tools" component={chavaliTools} />
+
               <Route exact path="/chavali/developer" component={H1} />
               <Route exact path="/chavali/designer" component={H2} />
               <Route exact path="/chavali/brand" component={H3} />
@@ -112,9 +118,30 @@ function Right() {
             </Switch>
           </div>
         </div>
-        <div className="RightElementTags" />
+        <div className="RightElementTags">
+          <div className="lineInContainer" />
+          <div className="TagContainer">
+            <div>
+              <p>:D</p>
+            </div>
+          </div>
+          <div className="lineInContainer" />
+          <div className="TagContainer">
+            <p>:P</p>
+          </div>
+          <div className="lineInContainer" />
+          <div className="TagContainer">
+            <p>:X</p>
+          </div>
+          <div className="lineInContainer" />
+          <div className="TagContainer">
+            <p>:)</p>
+          </div>
+        </div>
       </div>
-      <div className="RightElementFooter" />
+      <div className="RightElementFooter">
+        <p className="versionInFooter">version 1.0</p>
+      </div>
     </div>
   );
 }

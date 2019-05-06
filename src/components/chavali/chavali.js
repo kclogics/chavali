@@ -11,9 +11,10 @@ const Chavali = () => {
     <>
       <h1>krishnachavali.com </h1>
 
-      <h1>Home</h1>
-
       <nav>
+        <NavLink to="/chavali/home" activeStyle={activeStyle} exact>
+          <h1>Home</h1>
+        </NavLink>
         <NavLink to="/chavali/developer" activeStyle={activeStyle} exact>
           Developer
         </NavLink>{" "}
@@ -30,7 +31,9 @@ const Chavali = () => {
           Happiness
         </NavLink>
       </nav>
-      <h1>Tools</h1>
+      <NavLink to="/chavali/tools" activeStyle={activeStyle} exact>
+        <h1>TOOLS</h1>
+      </NavLink>
 
       <nav>
         <NavLink to="/chavali/t1" activeStyle={activeStyle} exact>
@@ -50,7 +53,9 @@ const Chavali = () => {
         </NavLink>
       </nav>
 
-      <h1>About</h1>
+      <NavLink to="/chavali/about" activeStyle={activeStyle} exact>
+        <h1>ABOUT</h1>
+      </NavLink>
 
       <nav>
         <NavLink to="/chavali/social" activeStyle={activeStyle} exact>
@@ -62,7 +67,9 @@ const Chavali = () => {
         </NavLink>
       </nav>
 
-      <h1>HECA</h1>
+      <NavLink to="/chavali/heca" activeStyle={activeStyle} exact>
+        <h1>HECA</h1>
+      </NavLink>
 
       <nav>
         <NavLink to="/chavali/hire" activeStyle={activeStyle} exact>
@@ -82,7 +89,9 @@ const Chavali = () => {
         </NavLink>
       </nav>
 
-      <h1>FACE</h1>
+      <NavLink to="/chavali/face" activeStyle={activeStyle} exact>
+        <h1>FACE</h1>
+      </NavLink>
 
       <nav>
         <NavLink to="/chavali/f1" activeStyle={activeStyle} exact>
@@ -101,28 +110,8 @@ const Chavali = () => {
           Enlighten
         </NavLink>
       </nav>
-      <hr />
 
-      <h1>Tools</h1>
-
-      <nav>
-        <NavLink to="/chavali/t1" activeStyle={activeStyle} exact>
-          Javascript
-        </NavLink>{" "}
-        {"|"}{" "}
-        <NavLink to="/chavali/t2" activeStyle={activeStyle}>
-          React js
-        </NavLink>{" "}
-        {"|"}{" "}
-        <NavLink to="/chavali/t3" activeStyle={activeStyle}>
-          Adobe
-        </NavLink>{" "}
-        {"|"}{" "}
-        <NavLink to="/chavali/t4" activeStyle={activeStyle}>
-          AWS
-        </NavLink>
-      </nav>
-      <div class="flex-wrapper">
+      {/* <div class="flex-wrapper">
         <div class="single-chart">
           <svg viewBox="0 0 36 36" class="circular-chart orange">
             <path
@@ -207,7 +196,7 @@ const Chavali = () => {
             </text>
           </svg>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

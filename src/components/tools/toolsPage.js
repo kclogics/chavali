@@ -1,13 +1,20 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { NavLink } from "react-router-dom";
+
+import { connect } from "react-redux";
+
+import { Link, Route, Switch, NavLink } from "react-router-dom";
+
+import CoursesPage from "./CoursesPage";
+import * as courseActions from "../../redux/actions/courseActions";
+
 const ToolsPage = () => {
   const activeStyle = { color: "red" };
   return (
     <>
-      <h1>Tools</h1>
-
       <nav>
+        <NavLink to="/tools/" activeStyle={activeStyle} exact>
+          <h1>Tools</h1>
+        </NavLink>
         <NavLink to="/tools/t1" activeStyle={activeStyle} exact>
           Javascript
         </NavLink>{" "}
@@ -24,6 +31,10 @@ const ToolsPage = () => {
           AWS
         </NavLink>
       </nav>
+
+      <Switch>
+        <Route exact path="/tools" component={CoursesPage} />
+      </Switch>
     </>
   );
 };
