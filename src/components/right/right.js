@@ -15,23 +15,44 @@ import H4 from "../home/H4";
 import Social from "../about/social";
 import S2 from "../about/s2";
 
-import Heca1 from "../heca/heca1";
-import Heca2 from "../heca/heca2";
-import Heca3 from "../heca/heca3";
-import Heca4 from "../heca/heca4";
-
 import F1 from "../face/F1";
 import F2 from "../face/F2";
 import F3 from "../face/F3";
 import F4 from "../face/F4";
 
 import chavaliTools from "../tools/chavaliTools.js";
+import HomePage from "../home/homePage";
+import HomePage1 from "../home/homePage.1";
+import HomePage2 from "../home/homePage.2";
+import HomePage3 from "../home/homePage.3";
+import HomePage4 from "../home/homePage.4";
+import AboutPage from "../about/aboutPage";
+import AboutPage1 from "../about/aboutPage.1";
+import AboutPage2 from "../about/aboutPage.2";
+import ToolsPage from "../tools/toolsPage";
+import ToolsPage1 from "../tools/toolsPage.1";
+import ToolsPage2 from "../tools/toolsPage.2";
+import ToolsPage3 from "../tools/toolsPage.3";
+import ToolsPage4 from "../tools/toolsPage.4";
+import Heca from "../heca/Heca";
+import Heca1 from "../heca/Heca.1";
+import Heca2 from "../heca/Heca.2";
+import Heca3 from "../heca/Heca.3";
+import Heca4 from "../heca/Heca.4";
+import Face from "../face/Face";
+import Face1 from "../face/Face.1";
+import Face2 from "../face/Face.2";
+import Face3 from "../face/Face.3";
+import Face4 from "../face/Face.4";
+import Header from "../common/Header";
+import Chavali from "../chavali/chavali";
 
 import Logo from "../../components/chavali/logo";
 
 import PageNotFound from "../PageNotFound";
+
 class ServerApp extends React.Component {
-  state = { users: [] };
+  state = { users: [], faker: [] };
 
   componentDidMount() {
     fetch("/users")
@@ -47,6 +68,7 @@ class ServerApp extends React.Component {
         {this.state.users.map(user => (
           <div key={user.id}>{user.username}</div>
         ))}
+
         {/* <img
           width="200px"
           src="//upload.wikimedia.org/wikipedia/commons/c/c4/Icon_Error.png"
@@ -60,14 +82,9 @@ function Right() {
   const activeStyle = { color: "red" };
   return (
     <div className="right">
-      <div className="RightElementHeader">
-        {" "}
-        <div className="HeaderLogo">
-          <Logo />
-        </div>
-      </div>
       <div className="RightElementBody">
         <div className="RightElementContent">
+          {/* <ServerApp /> */}
           <div className="RightElementContentStyle">
             <Switch>
               <Route exact path="/home/developer" component={H1} />
@@ -118,29 +135,80 @@ function Right() {
             </Switch>
           </div>
         </div>
+
         <div className="RightElementTags">
-          <div className="lineInContainer" />
-          <div className="TagContainer">
+          <div className="menuContentStyle" />
+          {/* <div className="TagContainerHome">
             <div>
-              <p>:D</p>
+              <Switch>
+                <Route path="/home" component={HomeTag} />
+                <Route path="/home/*" component={HomeTag} />
+                <Route path="/about" component={AboutTag} />
+                <Route path="/tools" component={ToolTag} />
+                <Route path="/heca" component={HecaTag} />
+                <Route path="/face" component={FaceTag} />
+              </Switch>
             </div>
-          </div>
-          <div className="lineInContainer" />
+          </div> */}
+
           <div className="TagContainer">
-            <p>:P</p>
+            <div className="RmenuTag">
+              <Logo />
+            </div>
+            <div className="menuContent" />
           </div>
-          <div className="lineInContainer" />
+          {/* <div className="menuContent" /> */}
+
           <div className="TagContainer">
-            <p>:X</p>
+            <div className="RmenuTag">
+              <Switch>
+                {/* <Route exact path="/" component={HomePage1} /> */}
+                <Route path="/home" component={HomePage1} />
+                <Route path="/about" component={AboutPage1} />
+                <Route path="/tools" component={ToolsPage1} />
+                <Route path="/heca" component={Heca1} />
+                <Route path="/face" component={Face1} />
+              </Switch>
+            </div>
+            <div className="menuContent" />
           </div>
-          <div className="lineInContainer" />
+
           <div className="TagContainer">
-            <p>:)</p>
+            {" "}
+            <div className="RmenuTag">
+              <Route path="/home" component={HomePage2} />
+              <Route path="/about" component={AboutPage2} />
+              <Route path="/tools" component={ToolsPage2} />
+              <Route path="/heca" component={Heca2} />
+              <Route path="/face" component={Face2} />
+            </div>
+            <div className="menuContent" />
+          </div>
+
+          <div className="TagContainer">
+            {" "}
+            <div className="RmenuTag">
+              {" "}
+              <Route path="/home" component={HomePage3} />
+              <Route path="/tools" component={ToolsPage3} />
+              <Route path="/heca" component={Heca3} />
+              <Route path="/face" component={Face3} />
+            </div>
+            <div className="menuContent" />
+          </div>
+
+          <div className="TagContainer">
+            {" "}
+            <div className="RmenuTag">
+              {" "}
+              <Route path="/home" component={HomePage4} />
+              <Route path="/tools" component={ToolsPage4} />
+              <Route path="/heca" component={Heca4} />
+              <Route path="/face" component={Face4} />
+            </div>
+            <div className="menuContent" />
           </div>
         </div>
-      </div>
-      <div className="RightElementFooter">
-        <p className="versionInFooter">version 1.0</p>
       </div>
     </div>
   );

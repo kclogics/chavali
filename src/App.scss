@@ -17,7 +17,7 @@ $element: white;
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #73020c;
+  // background-color: #73020c;
   left: 0;
   top: 0;
   overflow: hidden;
@@ -27,6 +27,7 @@ $element: white;
   left: 0;
   top: 0;
   overflow: hidden;
+  height: 100%;
 }
 
 h1 {
@@ -35,32 +36,33 @@ h1 {
 
 .left,
 .right {
-  width: 50%;
   height: 100%;
   display: block;
   position: absolute;
   // color: $brg-red;
 }
 .left {
+  width: 45%;
   left: 0;
   background-color: $left;
   overflow: hidden;
 }
 .right {
+  width: 55%;
   right: 0;
   background-color: $right;
   overflow: hidden;
 }
 
 @media (min-width: 1441px) and (max-width: 2560px) {
-  .HomeImage {
-    width: 100%;
-  }
+  // .HomeImage {
+  //   width: 100%;
+  // }
 }
 @media (min-width: 1024px) and (max-width: 1440px) {
-  .HomeImage {
-    height: 100%;
-  }
+  // .HomeImage {
+  //   height: 100%;
+  // }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -73,9 +75,9 @@ h1 {
   .right {
     bottom: 0;
   }
-  .HomeImage {
-    height: 100%;
-  }
+  // .HomeImage {
+  //   height: 100%;
+  // }
 }
 
 @media only screen and (max-width: 767px) {
@@ -99,12 +101,12 @@ h1 {
   .right {
     bottom: 0;
   }
-  .HomeImage {
-    width: 100%;
-  }
-  .ImageCover {
-    overflow: auto;
-  }
+  // .HomeImage {
+  //   width: 100%;
+  // }
+  // .ImageCover {
+  //   overflow: auto;
+  // }
 }
 
 @media (min-height: 240px) and (max-height: 420px) {
@@ -117,9 +119,9 @@ h1 {
   .right {
     bottom: 0;
   }
-  .HomeImage {
-    height: 100%;
-  }
+  // .HomeImage {
+  //   height: 100%;
+  // }
 }
 
 .HeaderLogo {
@@ -144,24 +146,28 @@ h1 {
 
 .LeftElementHeader,
 .RightElementHeader {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  // background-color: #d6dfff;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // background-color: $brg-grey;
+  // position: absolute;
+  width: 100%;
+  display: inline-block;
+  height: 20%;
+  padding: 3%;
 }
 .LeftElementBody,
 .RightElementBody {
   border: 2px solid $brg-grey;
 
-  overflow: auto;
-  height: 70%;
+  height: 100%;
   // background-color: $body;
   overflow: hidden;
   .LeftElementContent,
   .RightElementContent {
     overflow: auto;
     position: absolute;
-    width: 88%;
+    width: 90%;
     height: 100%;
     // background-color: rgb(46, 95, 114);
     // border: 2px solid black;
@@ -173,9 +179,8 @@ h1 {
   .LeftElementTags {
     // border-left: 2px solid black;
     // border-right: 2px solid black;
-    background-color: #b0b8bf;
+    // background-color: #b0b8bf;
     position: absolute;
-    width: 12%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -191,47 +196,119 @@ h1 {
 }
 .RightElementTags {
   right: 0;
+  width: 100%;
+  background-color: red;
+}
+.LeftElementTags {
+  width: 100%;
 }
 .LeftElementContent {
   right: 0;
+  // overflow: auto;
+  z-index: 10000001;
 }
-
+.RightElementContent {
+  left: 0;
+  overflow: auto;
+  z-index: 10000001;
+}
 .TagContainer {
-  background-color: #f1f1f1;
+  // background-color: blue;
   width: 100%;
-  height: 50%;
-  text-align: center;
+  height: 80%;
+
   color: grey;
   position: relative;
   display: flex;
-  justify-content: center;
+
+  // border: 1px solid red;
+  // z-index: 100001;
 }
 .TagContainerHome {
   width: 100%;
-  height: 90%;
+  height: 10%;
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
-  background-color: #f1f1f1;
+  // background-color: #f1f1f1;
 }
 .lineInContainer {
   height: 5px;
-  background-clip: red;
+  // background-clip: red;
 }
 .LeftElementContentStyle,
 .RightElementContentStyle {
-  margin: 10px;
 }
-
+.LeftElementContentStyle {
+  // background-color: #bf0413;
+  overflow-x: auto;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 100%;
+  height: 80%;
+}
+.RightElementContentStyle {
+  // background-color: #bf0413;
+  overflow: auto;
+  position: absolute;
+  width: 95%;
+  height: 100%;
+}
 .RightElementFooter {
   // background-color: #bf0413;
 }
-
-.versionInFooter {
+.menuButton {
+  background-color: #ff9f00;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.HomePageButton {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #3c9ee5;
+}
+.menuTag {
+  // z-index: 10000001;
+  position: relative;
+  width: 15%;
+  background-color: $brg-grey;
+}
+.RmenuTag {
+  width: 15%;
+  height: 100%;
+  z-index: 10000001;
+  background-color: $brg-grey;
   right: 0;
   position: absolute;
-  margin: 2%;
 }
+.menuContent {
+  width: 85%;
+
+  // background-color: green;
+}
+
+// .menuContentStyle {
+//   position: absolute;
+//   background-color: red;
+//   z-index: 100001;
+//   width: 100%;
+//   height: 100%;
+//   z-index: 10000001;
+//   right: 0;
+//   margin: 10%;
+//   overflow: auto;
+// }
+// .versionInFooter {
+//   right: 0;
+//   position: absolute;
+//   margin: 2%;
+// }
 
 // -----------------------------------------------------------------------------------------------
 

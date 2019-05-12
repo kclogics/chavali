@@ -18,6 +18,10 @@ app.get("/users", function(req, res) {
   ]);
 });
 
+app.get("/users2", function(req, res) {
+  res.json("test");
+});
+
 app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "../build", "index.html"));
 });

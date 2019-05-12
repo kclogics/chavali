@@ -1,9 +1,33 @@
 import React from "react";
 import { connect } from "react-redux";
+import { Redirect } from "react-router-dom";
 import * as courseActions from "../../redux/actions/courseActions";
 import PropTypes from "prop-types";
 import { bindActionCreators } from "redux";
 
+// class MyComponent extends React.Component {
+//   state = {
+//     redirect: false
+//   };
+//   setRedirect = () => {
+//     this.setState({
+//       redirect: true
+//     });
+//   };
+//   renderRedirect = () => {
+//     if (this.state.redirect) {
+//       return <Redirect to="/users" />;
+//     }
+//   };
+//   render() {
+//     return (
+//       <div>
+//         {this.renderRedirect()}
+//         <button onClick={this.setRedirect}>Redirect</button>
+//       </div>
+//     );
+//   }
+// }
 class CoursesPage extends React.Component {
   state = {
     course: {
@@ -37,6 +61,8 @@ class CoursesPage extends React.Component {
         {this.props.courses.map(course => (
           <p key={course.title.toString()}>{course.title}</p>
         ))}
+
+        {/* <MyComponent /> */}
       </form>
     );
   }

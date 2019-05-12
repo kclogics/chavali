@@ -10,8 +10,11 @@ const HomePage = () => {
 
   return (
     <>
-      <h1>Home </h1>
       <nav>
+        <NavLink to="/home/developer" activeStyle={activeStyle}>
+          <h1>Home </h1>
+        </NavLink>{" "}
+        {"|"}{" "}
         <NavLink to="/home/developer" activeStyle={activeStyle}>
           Developer
         </NavLink>{" "}

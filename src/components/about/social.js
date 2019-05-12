@@ -22,7 +22,7 @@ const Social = () => (
         lovely time :) &nbsp;
       </a>
     </p>
-    <iframe src={maploc} width="100%" height="260px" frameBorder="0" />
+    <iframe src={maploc} width="99.5%" height="260px" frameBorder="0" />
   </div>
 );
 export default Social;
