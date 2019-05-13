@@ -48,6 +48,7 @@ import Header from "../common/Header";
 import Chavali from "../chavali/chavali";
 
 import Logo from "../../components/chavali/logo";
+import Developer from "../../components/chavali/developer";
 
 import PageNotFound from "../PageNotFound";
 
@@ -153,7 +154,10 @@ function Right() {
 
           <div className="TagContainer">
             <div className="RmenuTag">
-              <Logo />
+              <Switch>
+                {/* <Route exact path="/" component={HomePage1} /> */}
+                <Route path="/home/developer" component={Developer} />
+              </Switch>
             </div>
             <div className="menuContent" />
           </div>

@@ -114,6 +114,23 @@ h1 {
   padding: 3%;
 }
 
+.LeftElementHeader {
+  position: absolute;
+  width: 100%;
+  display: inline-block;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LeftElementHeaderPosition {
+  position: relative;
+  width: 80%;
+  height: auto;
+  top: 20%;
+}
+
 .LeftElementBody,
 .RightElementBody {
   border: 2px solid #b0b8bf;
@@ -194,10 +211,10 @@ h1 {
 .LeftElementContentStyle {
   overflow-x: auto;
   position: absolute;
-  top: 10%;
+  top: 20%;
   left: 10%;
   width: 100%;
-  height: 80%;
+  height: 65%;
 }
 
 .RightElementContentStyle {
@@ -208,7 +225,6 @@ h1 {
 }
 
 .menuButton {
-  background-color: #ff9f00;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -299,6 +315,10 @@ h1 {
   font-family: sans-serif;
   font-size: 0.5em;
   text-anchor: middle;
+}
+
+.logo_active {
+  font-size: 35px;
 }
 
 /*# sourceMappingURL=App.css.map */

@@ -156,6 +156,28 @@ h1 {
   height: 20%;
   padding: 3%;
 }
+
+.LeftElementHeader {
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // background-color: $brg-grey;
+  position: absolute;
+  width: 100%;
+  display: inline-block;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LeftElementHeaderPosition {
+  position: relative;
+  // background-color: #a63740;
+  width: 80%;
+  height: auto;
+  top: 20%;
+}
 .LeftElementBody,
 .RightElementBody {
   border: 2px solid $brg-grey;
@@ -243,10 +265,10 @@ h1 {
   // background-color: #bf0413;
   overflow-x: auto;
   position: absolute;
-  top: 10%;
+  top: 20%;
   left: 10%;
   width: 100%;
-  height: 80%;
+  height: 65%;
 }
 .RightElementContentStyle {
   // background-color: #bf0413;
@@ -259,7 +281,7 @@ h1 {
   // background-color: #bf0413;
 }
 .menuButton {
-  background-color: #ff9f00;
+  // background-color: #ff9f00;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -369,4 +391,9 @@ h1 {
   font-family: sans-serif;
   font-size: 0.5em;
   text-anchor: middle;
+}
+
+.logo_active {
+  // color: wheat;
+  font-size: 35px;
 }

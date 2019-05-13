@@ -7,7 +7,7 @@ import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router } from "react-router-dom";
 import configureStore from "./redux/configureStore";
 
-const store = configureStore();
+const store = configureStore(); //can be useful to pass initial state , for serverRendering or Redux store with data from local Storage
 
 ReactDOM.render(
   <ReduxProvider store={store}>

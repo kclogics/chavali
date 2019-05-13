@@ -12,7 +12,7 @@ import HomePage4 from "../home/homePage.4";
 import AboutPage from "../about/aboutPage";
 import AboutPage1 from "../about/aboutPage.1";
 import AboutPage2 from "../about/aboutPage.2";
-import ToolsPage from "../tools/toolsPage";
+import TP from "../tools/TP";
 import ToolsPage1 from "../tools/toolsPage.1";
 import ToolsPage2 from "../tools/toolsPage.2";
 import ToolsPage3 from "../tools/toolsPage.3";
@@ -51,6 +51,7 @@ function Left() {
           <div className="LeftElementContentStyle">
             <Switch>
               <Route path="/chavali" component={Chavali} />
+              <Route path="/tools" component={TP} />
             </Switch>
           </div>
         </div>
@@ -75,8 +76,9 @@ function Left() {
             </div>
             <div className="menuContent">
               <div className="LeftElementHeader">
-                {" "}
-                <Header />
+                <div className="LeftElementHeaderPosition">
+                  <Header />
+                </div>
               </div>
             </div>
           </div>

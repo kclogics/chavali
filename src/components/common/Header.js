@@ -4,26 +4,30 @@ import { NavLink, Switch } from "react-router-dom";
 const Header = () => {
   const activeStyle = { color: "red" };
 
+  var Styles = {
+    emoStyle: {
+      fontSize: "200%",
+      paddingLeft: "6%",
+      textDecoration: "none"
+    }
+  };
+
   return (
     <nav>
       <NavLink to="/home" activeStyle={activeStyle}>
-        Home
-      </NavLink>{" "}
-      {"|"}{" "}
+        <span style={Styles.emoStyle}>🏠</span>
+      </NavLink>
       <NavLink to="/tools" activeStyle={activeStyle}>
-        Tools
-      </NavLink>{" "}
-      {"|"}{" "}
+        <span style={Styles.emoStyle}>⚒</span>
+      </NavLink>
       <NavLink to="/about" activeStyle={activeStyle}>
-        About
-      </NavLink>{" "}
-      {"|"}{" "}
+        <span style={Styles.emoStyle}>⛹</span>
+      </NavLink>
       <NavLink to="/heca" activeStyle={activeStyle}>
-        Heca
-      </NavLink>{" "}
-      {"|"}{" "}
+        <span style={Styles.emoStyle}>🦄</span>
+      </NavLink>
       <NavLink to="/face" activeStyle={activeStyle}>
-        Face
+        <span style={Styles.emoStyle}>⚔</span>
       </NavLink>
     </nav>
   );

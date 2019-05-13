@@ -1,15 +1,6 @@
 import React from "react";
 
 class JavascriptDetails extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      course: {
-        title: ""
-      }
-    };
-  }
   render() {
     return (
       <form>

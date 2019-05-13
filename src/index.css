@@ -12,6 +12,7 @@ body {
 
 a {
   color: grey;
+  text-decoration: none;
 
   /* background-color: brown; */
 }

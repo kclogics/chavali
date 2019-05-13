@@ -17,3 +17,4 @@ git:
 15. Added Images in HomePage with stitching media queries
 16. Proxy added
 17. major changes in wireframing design (incomplete work)
+18. added tools with redux (mapStateToProps)
