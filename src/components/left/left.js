@@ -14,6 +14,8 @@ import AboutPage1 from "../about/aboutPage.1";
 import AboutPage2 from "../about/aboutPage.2";
 import TP from "../tools/TP";
 import TP1 from "../tools/TP.1";
+import ManageTP1Page from "../tools/ManageTP1Page";
+import ManageTP1PageHooks from "../tools/ManageTP1PageHooks";
 import ToolsPage1 from "../tools/toolsPage.1";
 import ToolsPage2 from "../tools/toolsPage.2";
 import ToolsPage3 from "../tools/toolsPage.3";
@@ -54,6 +56,10 @@ function Left() {
               <Route path="/chavali" component={Chavali} />
               <Route path="/tools/t1" component={TP} />
               <Route path="/tools/t2" component={TP1} />
+              <Route path="/tools/t3/:slug" component={ManageTP1Page} />
+              <Route path="/tools/t3" component={ManageTP1Page} />
+              <Route path="/tools/t4" component={ManageTP1PageHooks} />
+              {/* <Route component={PageNotFound} /> */}
             </Switch>
           </div>
         </div>

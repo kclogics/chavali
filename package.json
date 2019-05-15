@@ -73,8 +73,8 @@
     "start": "run-p  start-dev server mock",
     "start-dev": "node scripts/start.js",
     "server": " node scripts/server.js",
-    "premock": "node mock/createMockDb.js",
-    "mock": "node mock/mock.js",
+    "premock": "node src/mock/createMockDb.js",
+    "mock": "node src/mock/mock.js",
     "style": "sass  --watch src/App.scss src/App.css",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js"

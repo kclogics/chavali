@@ -267,12 +267,13 @@ h1 {
 }
 
 .RmenuTag {
-  width: 15%;
+  width: 10%;
   height: 100%;
   z-index: 10000001;
-  background-color: #b0b8bf;
+  background-color: #ff9f00;
   right: 0;
   position: absolute;
+  border: 1px solid black;
 }
 
 .menuContent {

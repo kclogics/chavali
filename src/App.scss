@@ -316,12 +316,13 @@ h1 {
   background-color: $brg-grey;
 }
 .RmenuTag {
-  width: 15%;
+  width: 10%;
   height: 100%;
   z-index: 10000001;
-  background-color: $brg-grey;
+  background-color: #ff9f00;
   right: 0;
   position: absolute;
+  border: 1px solid black;
 }
 .menuContent {
   width: 85%;

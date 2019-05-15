@@ -28,7 +28,7 @@ const CourseList = (
               </a>
             </td>
             <td>
-              <Link to={"/course/" + course.slug}>{course.title}</Link>
+              <Link to={"/tools/t3/" + course.slug}>{course.title}</Link>
             </td>
             <td>{course.authorName}</td>
             <td>{course.category}</td>

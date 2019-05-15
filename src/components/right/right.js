@@ -171,52 +171,25 @@ function Right() {
           {/* <div className="menuContent" /> */}
 
           <div className="TagContainer">
-            <div className="RmenuTag">
-              <Switch>
-                {/* <Route exact path="/" component={HomePage1} /> */}
-                <Route path="/home" component={HomePage1} />
-                <Route path="/about" component={AboutPage1} />
-                <Route path="/tools" component={ToolsPage1} />
-                <Route path="/heca" component={Heca1} />
-                <Route path="/face" component={Face1} />
-              </Switch>
-            </div>
+            <div className="RmenuTag" />
             <div className="menuContent" />
           </div>
 
           <div className="TagContainer">
             {" "}
-            <div className="RmenuTag">
-              <Route path="/home" component={HomePage2} />
-              <Route path="/about" component={AboutPage2} />
-              <Route path="/tools" component={ToolsPage2} />
-              <Route path="/heca" component={Heca2} />
-              <Route path="/face" component={Face2} />
-            </div>
+            <div className="RmenuTag" />
             <div className="menuContent" />
           </div>
 
           <div className="TagContainer">
             {" "}
-            <div className="RmenuTag">
-              {" "}
-              <Route path="/home" component={HomePage3} />
-              <Route path="/tools" component={ToolsPage3} />
-              <Route path="/heca" component={Heca3} />
-              <Route path="/face" component={Face3} />
-            </div>
+            <div className="RmenuTag" />
             <div className="menuContent" />
           </div>
 
           <div className="TagContainer">
             {" "}
-            <div className="RmenuTag">
-              {" "}
-              <Route path="/home" component={HomePage4} />
-              <Route path="/tools" component={ToolsPage4} />
-              <Route path="/heca" component={Heca4} />
-              <Route path="/face" component={Face4} />
-            </div>
+            <div className="RmenuTag"> </div>
             <div className="menuContent" />
           </div>
         </div>
