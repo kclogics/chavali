@@ -19,9 +19,10 @@ const HomePage4 = () => {
     <>
       <nav>
         <NavLink to="/home/happiness" activeStyle={styles.logo_active}>
-          <span className="menuButton">
+          <button className="menuButton">
+            {/* <p className="logo_active">&#9786;</p> */}
             <p className="logo_active">&#9786;</p>
-          </span>
+          </button>
         </NavLink>
       </nav>
     </>

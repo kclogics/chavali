@@ -12,7 +12,7 @@ const HomePage3 = () => {
     <>
       <nav>
         <NavLink to="/home/brand">
-          <span className="menuButton">
+          <button className="menuButton">
             <svg
               width="25px"
               id="Layer_1"
@@ -38,7 +38,7 @@ const HomePage3 = () => {
                 fill={fillColor}
               />
             </svg>
-          </span>
+          </button>
         </NavLink>
       </nav>
     </>

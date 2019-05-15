@@ -39,6 +39,7 @@ import Heca1 from "../heca/Heca.1";
 import Heca2 from "../heca/Heca.2";
 import Heca3 from "../heca/Heca.3";
 import Heca4 from "../heca/Heca.4";
+
 import Face from "../face/Face";
 import Face1 from "../face/Face.1";
 import Face2 from "../face/Face.2";
@@ -51,6 +52,10 @@ import Logo from "../../components/chavali/logo";
 import Developer from "../../components/chavali/developer";
 
 import PageNotFound from "../PageNotFound";
+import Heca_hire from "./../heca/heca1";
+import Heca_earn from "./../heca/heca2";
+import Heca_collab from "./../heca/heca3";
+import Heca_affil from "./../heca/heca4";
 
 class ServerApp extends React.Component {
   state = { users: [], faker: [] };
@@ -64,7 +69,7 @@ class ServerApp extends React.Component {
 
   render() {
     return (
-      <div className="App">
+      <div>
         <h2>Users</h2>
         {this.state.users.map(user => (
           <div key={user.id}>{user.username}</div>
@@ -81,11 +86,13 @@ class ServerApp extends React.Component {
 
 function Right() {
   const activeStyle = { color: "red" };
+
   return (
     <div className="right">
       <div className="RightElementBody">
         <div className="RightElementContent">
-          {/* <ServerApp /> */}
+          <ServerApp />
+
           <div className="RightElementContentStyle">
             <Switch>
               <Route exact path="/home/developer" component={H1} />
@@ -101,10 +108,10 @@ function Right() {
               <Route exact path="/about/social" component={Social} />
               <Route exact path="/about/s2" component={S2} />
 
-              <Route exact path="/heca/hire" component={Heca1} />
-              <Route exact path="/heca/earn" component={Heca2} />
-              <Route exact path="/heca/collabrate" component={Heca3} />
-              <Route exact path="/heca/affiliate" component={Heca4} />
+              <Route exact path="/heca/hire" component={Heca_hire} />
+              <Route exact path="/heca/earn" component={Heca_earn} />
+              <Route exact path="/heca/collabrate" component={Heca_collab} />
+              <Route exact path="/heca/affiliate" component={Heca_affil} />
 
               <Route exact path="/face/f1" component={F1} />
               <Route exact path="/face/f2" component={F2} />

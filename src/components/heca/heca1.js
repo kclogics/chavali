@@ -1,9 +1,9 @@
 import React from "react";
 
-const Heca1 = () => (
+const Heca_hire = () => (
   <div>
     <h1>Hire me</h1>
     <p>Let's connect & make that awesome thing alive</p>
   </div>
 );
-export default Heca1;
+export default Heca_hire;

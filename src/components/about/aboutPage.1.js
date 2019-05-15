@@ -7,7 +7,7 @@ const AboutPage1 = () => {
     <>
       <nav>
         <NavLink to="/about/s2" activeStyle={activeStyle}>
-          <span className="menuButton">About Me</span>
+          <span className="menuButton"> Me</span>
         </NavLink>
       </nav>
     </>

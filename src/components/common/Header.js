@@ -15,19 +15,19 @@ const Header = () => {
   return (
     <nav>
       <NavLink to="/home" activeStyle={activeStyle}>
-        <span style={Styles.emoStyle}>🏠</span>
+        <button style={Styles.emoStyle}>🏠</button>
       </NavLink>
       <NavLink to="/tools" activeStyle={activeStyle}>
-        <span style={Styles.emoStyle}>⚒</span>
+        <button style={Styles.emoStyle}>⚒</button>
       </NavLink>
       <NavLink to="/about" activeStyle={activeStyle}>
-        <span style={Styles.emoStyle}>⛹</span>
+        <button style={Styles.emoStyle}>⛹</button>
       </NavLink>
       <NavLink to="/heca" activeStyle={activeStyle}>
-        <span style={Styles.emoStyle}>🦄</span>
+        <button style={Styles.emoStyle}>🦄</button>
       </NavLink>
       <NavLink to="/face" activeStyle={activeStyle}>
-        <span style={Styles.emoStyle}>⚔</span>
+        <button style={Styles.emoStyle}>⚔</button>
       </NavLink>
     </nav>
   );

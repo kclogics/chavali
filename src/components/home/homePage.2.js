@@ -12,7 +12,7 @@ const HomePage2 = () => {
     <>
       <nav>
         <NavLink to="/home/designer" activeStyle={activeStyle}>
-          <span className="menuButton">
+          <button className="menuButton">
             <svg
               width="25px"
               id="Layer_1"
@@ -75,7 +75,7 @@ const HomePage2 = () => {
               </g>
               <circle cx="117.16" cy="68.4" r="42.06" fill={fillColor} />
             </svg>
-          </span>
+          </button>
         </NavLink>
       </nav>
     </>

@@ -9,7 +9,7 @@ const Logo = () => {
 
   return (
     <nav>
-      <span className="menuButton">
+      <button className="menuButton">
         {" "}
         <NavLink to="/chavali" activeStyle={activeStyle} exact>
           {/* <img width="100px" src={LogoChavali} alt="logo" /> */}
@@ -104,7 +104,7 @@ const Logo = () => {
             </g>
           </svg>
         </NavLink>{" "}
-      </span>
+      </button>
     </nav>
   );
 };
