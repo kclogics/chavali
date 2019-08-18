@@ -20,3 +20,4 @@ git:
 18. added tools with redux (mapStateToProps)
 19. added courses and authors in redux store
 20. modifying global state expermiment with redux
+21. active now
