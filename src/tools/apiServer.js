@@ -9,14 +9,12 @@ Delay: https://github.com/typicode/json-server/issues/534
 ID: https://github.com/typicode/json-server/issues/613#issuecomment-325393041
 Relevant source code: https://github.com/typicode/json-server/blob/master/src/cli/run.js
 */
-const express = require("express");
+
 /* eslint-disable no-console */
 const jsonServer = require("json-server");
 const server = jsonServer.create();
 const path = require("path");
 const router = jsonServer.router(path.join(__dirname, "db.json"));
-const app = express();
-app.use(express.static(path.join(__dirname, "../build")));
 
 // Can pass a limited number of options to this to override (some) defaults. See https://github.com/typicode/json-server#api
 const middlewares = jsonServer.defaults();
@@ -29,7 +27,7 @@ server.use(jsonServer.bodyParser);
 
 // Simulate delay on all requests
 server.use(function(req, res, next) {
-  setTimeout(next, 2000);
+  setTimeout(next, 9000);
 });
 
 // Declaring custom routes below. Add custom routes before JSON Server router
@@ -43,22 +41,21 @@ server.use((req, res, next) => {
   next();
 });
 
-// server.post("/courses/", function(req, res, next) {
-//   const error = validateCourse(req.body);
-//   if (error) {
-//     res.status(400).send(error);
-//   } else {
-//     req.body.slug = createSlug(req.body.title); // Generate a slug for new courses.
-//     next();
-//   }
-// });
+server.post("/courses/", function(req, res, next) {
+  const error = validateCourse(req.body);
+  if (error) {
+    res.status(400).send(error);
+  } else {
+    req.body.slug = createSlug(req.body.title); // Generate a slug for new courses.
+    next();
+  }
+});
 
 // Use default router
 server.use(router);
 
 // Start server
 const port = 8081;
-
 server.listen(port, () => {
   console.log(`JSON Server is running on port ${port}`);
 });

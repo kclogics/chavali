@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/kclogics/chavali/precache-manifest.26ca903a8d0a623310534475b2cb43e8.js"
+  "/kclogics/chavali/precache-manifest.cd495a25bc614b3381dd737305ee8608.js"
 );
 
 self.addEventListener('message', (event) => {

@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2a559dd23dea8c52440399b2551ad9bc",
+    "revision": "9bc42deee256eb08bdafbc5af8a69190",
     "url": "/kclogics/chavali/index.html"
   },
   {
-    "revision": "55fcd0f0d8eb839f0fe3",
-    "url": "/kclogics/chavali/static/css/main.fcbfdc13.chunk.css"
+    "revision": "e64746764cce58d98a93",
+    "url": "/kclogics/chavali/static/css/main.70a446e9.chunk.css"
   },
   {
-    "revision": "da1666174066c9a10efd",
-    "url": "/kclogics/chavali/static/js/2.9d811991.chunk.js"
+    "revision": "f0935307622ff644b6f2",
+    "url": "/kclogics/chavali/static/js/2.1b96e695.chunk.js"
   },
   {
-    "revision": "55fcd0f0d8eb839f0fe3",
-    "url": "/kclogics/chavali/static/js/main.52de967a.chunk.js"
+    "revision": "e64746764cce58d98a93",
+    "url": "/kclogics/chavali/static/js/main.75e0e474.chunk.js"
   },
   {
     "revision": "7451d0f4c159a1fb4062",

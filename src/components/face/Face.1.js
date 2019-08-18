@@ -9,7 +9,10 @@ const Face1 = () => {
     <>
       <nav>
         <NavLink to="/face/f1" activeStyle={activeStyle} exact>
-          <span className="menuButton">Fun</span>
+          {/* <span className="menuButton">Fun</span> */}
+          <span className="menuButton">
+            <h1 className="menuButtonLogo">F</h1>
+          </span>
         </NavLink>
       </nav>
     </>

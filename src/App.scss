@@ -22,7 +22,8 @@ thead {
   background-color: #b0b8bf;
 }
 td {
-  background-color: #ff9f00;
+  background-color: $brg-maroon;
+  color: white;
 }
 .ImageCover {
   position: absolute;
@@ -285,7 +286,7 @@ h1 {
   height: 70%;
 }
 .RightElementContentStyle {
-  background-color: $brg-maroon;
+  // background-color: $brg-maroon;
   overflow: auto;
   position: absolute;
   width: 95%;
@@ -294,14 +295,19 @@ h1 {
 .RightElementFooter {
   // background-color: #bf0413;
 }
-.menuButton {
-  background-color: #ff9f00;
+.menuButton,
+.menuButtonLogo {
+  background-color: $brg-maroon;
   position: absolute;
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.menuButtonLogo {
+  width: 50%;
+  height: 50%;
 }
 .HomePageButton {
   position: absolute;
@@ -319,7 +325,7 @@ h1 {
   width: 10%;
   height: 100%;
   z-index: 10000001;
-  background-color: #ff9f00;
+  background-color: $brg-maroon;
   right: 0;
   position: absolute;
   border: 1px solid black;

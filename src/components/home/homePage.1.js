@@ -22,17 +22,17 @@ const HomePage1 = () => {
       // marginTop: '3%',
 
       cursor: "pointer",
-      "@media only screen and (max-width: 360px) and (min-width: 0px)": {
+      "@media only screen and (maxWidth: 360px) and (minWidth: 0px)": {
         display: "none"
       },
-      "@media only screen and (max-width: 460px) and (min-width: 361px)": {},
-      "@media only screen and (max-width: 500px) and (min-width: 461px)": {
+      "@media only screen and (maxWidth: 460px) and (minWidth: 361px)": {},
+      "@media only screen and (maxWidth: 500px) and (minWidth: 461px)": {
         display: "none"
       },
-      "@media only screen and (max-width: 640px) and (min-width: 540px)": {
+      "@media only screen and (maxWidth: 640px) and (minWidth: 540px)": {
         display: "none"
       },
-      "@media only screen and (min-width: 760px) and (max-width: 1024px)": {
+      "@media only screen and (minWidth: 760px) and (maxWidth: 1024px)": {
         display: "none"
       }
     }

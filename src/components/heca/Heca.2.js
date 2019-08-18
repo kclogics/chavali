@@ -9,7 +9,10 @@ const Heca2 = () => {
     <>
       <nav>
         <NavLink to="/heca/earn" activeStyle={activeStyle}>
-          <span className="menuButton">Earn</span>
+          {/* <span className="menuButton">Earn</span> */}
+          <span className="menuButton">
+            <h1 className="menuButtonLogo">E</h1>
+          </span>
         </NavLink>
       </nav>
     </>

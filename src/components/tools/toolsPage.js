@@ -2,8 +2,6 @@ import React from "react";
 
 import { Link, Route, Switch, NavLink } from "react-router-dom";
 
-import CoursesPage from "./TP";
-
 const ToolsPage = () => {
   const activeStyle = { color: "red" };
   return (
@@ -28,10 +26,6 @@ const ToolsPage = () => {
           AWS
         </NavLink>
       </nav>
-
-      <Switch>
-        <Route exact path="/tools" component={CoursesPage} />
-      </Switch>
     </>
   );
 };

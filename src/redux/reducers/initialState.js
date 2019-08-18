@@ -1,6 +1,5 @@
 export default {
-  tools: [],
-  authors: []
+  courses: [],
+  authors: [],
+  apiCallsInProgress: 0
 };
-
-//for developers the global states

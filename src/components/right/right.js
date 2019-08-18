@@ -35,10 +35,10 @@ import ToolsPage2 from "../tools/toolsPage.2";
 import ToolsPage3 from "../tools/toolsPage.3";
 import ToolsPage4 from "../tools/toolsPage.4";
 import Heca from "../heca/Heca";
-import Heca1 from "../heca/Heca.1";
-import Heca2 from "../heca/Heca.2";
-import Heca3 from "../heca/Heca.3";
-import Heca4 from "../heca/Heca.4";
+import Heca1 from "../heca/heca1";
+import Heca2 from "../heca/heca2";
+import Heca3 from "../heca/heca3";
+import Heca4 from "../heca/heca4";
 
 import Face from "../face/Face";
 import Face1 from "../face/Face.1";

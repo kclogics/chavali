@@ -1,70 +1,70 @@
 const courses = [
   {
     id: 1,
-    title: "Auth0",
-    slug: "security",
+    title: "Securing React Apps with Auth0",
+    slug: "react-auth0-authentication-security",
     authorId: 1,
     category: "JavaScript"
   },
   {
     id: 2,
-    title: "React",
-    slug: "big-picture",
+    title: "React: The Big Picture",
+    slug: "react-big-picture",
     authorId: 1,
     category: "JavaScript"
   },
   {
     id: 3,
-    title: "React Components",
-    slug: "reusable-components",
+    title: "Creating Reusable React Components",
+    slug: "react-creating-reusable-components",
     authorId: 1,
     category: "JavaScript"
   },
   {
     id: 4,
-    title: "Development Env",
+    title: "Building a JavaScript Development Environment",
     slug: "javascript-development-environment",
     authorId: 1,
     category: "JavaScript"
   },
   {
     id: 5,
-    title: "React and Redux",
+    title: "Building Applications with React and Redux",
     slug: "react-redux-react-router-es6",
     authorId: 1,
     category: "JavaScript"
   },
   {
     id: 6,
-    title: "React and Flux",
+    title: "Building Applications in React and Flux",
     slug: "react-flux-building-applications",
     authorId: 1,
     category: "JavaScript"
   },
   {
     id: 7,
-    title: "Code for Humans",
+    title: "Clean Code: Writing Code for Humans",
     slug: "writing-clean-code-humans",
     authorId: 1,
     category: "Software Practices"
   },
   {
     id: 8,
-    title: "Real World",
+    title: "Architecting Applications for the Real World",
     slug: "architecting-applications-dotnet",
     authorId: 1,
     category: "Software Architecture"
   },
   {
     id: 9,
-    title: "Developer Mind",
+    title: "Becoming an Outlier: Reprogramming the Developer Mind",
     slug: "career-reboot-for-developer-mind",
     authorId: 1,
     category: "Career"
   },
   {
     id: 10,
-    title: "Fundamentals",
+    title: "Web Component Fundamentals",
     slug: "web-components-shadow-dom",
     authorId: 1,
     category: "HTML5"

@@ -12,10 +12,7 @@ import HomePage4 from "../home/homePage.4";
 import AboutPage from "../about/aboutPage";
 import AboutPage1 from "../about/aboutPage.1";
 import AboutPage2 from "../about/aboutPage.2";
-import TP from "../tools/TP";
-import TP1 from "../tools/TP.1";
-import ManageTP1Page from "../tools/ManageTP1Page";
-import ManageTP1PageHooks from "../tools/ManageTP1PageHooks";
+
 import ToolsPage1 from "../tools/toolsPage.1";
 import ToolsPage2 from "../tools/toolsPage.2";
 import ToolsPage3 from "../tools/toolsPage.3";
@@ -41,6 +38,9 @@ import HecaTag from "../tags/hecaTag";
 import FaceTag from "../tags/faceTag";
 import Logo from "../../components/chavali/logo";
 
+import CoursesPage from "../courses/CoursesPage";
+import ManageCoursePage from "../courses/ManageCoursePage";
+
 function Left() {
   const activeStyle = { color: "red" };
   return (
@@ -54,11 +54,15 @@ function Left() {
           <div className="LeftElementContentStyle">
             <Switch>
               <Route path="/chavali" component={Chavali} />
-              <Route path="/tools/t1" component={TP} />
-              <Route path="/tools/t2" component={TP1} />
-              <Route path="/tools/t3/:slug" component={ManageTP1Page} />
+
+              {/* <Route path="/tools/t2/:slug" component={ManageTP1PageHooks} /> */}
+              {/* <Route path="/tools/t3/:slug" component={ManageTP1Page} />
               <Route path="/tools/t3" component={ManageTP1Page} />
-              <Route path="/tools/t4" component={ManageTP1PageHooks} />
+              <Route path="/tools/t4" component={ManageTP1PageHooks} /> */}
+
+              <Route path="/courses" component={CoursesPage} />
+              <Route path="/course/:slug" component={ManageCoursePage} />
+              <Route path="/course" component={ManageCoursePage} />
               {/* <Route component={PageNotFound} /> */}
             </Switch>
           </div>

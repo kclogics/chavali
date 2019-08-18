@@ -1,10 +1,22 @@
 import React from "react";
 
+import T1 from "./T1";
+import T2 from "./T2";
+import T3 from "./T3";
+import T4 from "./T4";
+
 const aws = "45, 100";
 
 const chavaliTools = () => (
   <>
-    <div className="flex-wrapper">
+    <T1 />
+    <hr />
+    <T2 />
+    <hr />
+    <T3 />
+    <hr />
+    <T4 />
+    {/* <div className="flex-wrapper">
       <div className="single-chart">
         <svg viewBox="0 0 36 36" className="circular-chart orange">
           <path
@@ -89,7 +101,7 @@ const chavaliTools = () => (
           </text>
         </svg>
       </div>
-    </div>
+    </div> */}
   </>
 );
 
